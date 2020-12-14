@@ -1,0 +1,9 @@
+<h1>Super Powers Page</h1>
+
+<% @super_powers.each do |power| %>
+    <%= "Move: #{power.name}" %><br>
+    <%= "Rating: #{power.rating}" %><br>
+    <%= power.tof %><br>
+    <%= link_to power.name, super_power_path(power) %><br>
+    <br>
+    <% end %>
